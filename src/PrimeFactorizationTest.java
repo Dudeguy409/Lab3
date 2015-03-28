@@ -1,5 +1,8 @@
 import static org.junit.Assert.*;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.junit.AfterClass;
 import org.junit.Test;
 
@@ -12,7 +15,12 @@ public class PrimeFactorizationTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		assertEquals(list(), PrimeFactorization.generate(1));
+	}
+
+	private List<Integer> list() {
+		// TODO Auto-generated method stub
+		return Arrays.asList();
 	}
 
 }
