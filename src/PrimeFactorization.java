@@ -1,16 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class PrimeFactorization {
 
 	public static List<Integer> generate(int i) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		for(;i % 2 == 0; i /= 2 ){
-			list.add(2);
+		
+		for(int candidate=2;i > 1;candidate++) {
+			for (; i % candidate == 0; i /= candidate) {
+				list.add(candidate);
+			}
+			
 		}
-		if(i > 1)
-			list.add(i);
 		return list;
 	}
 
