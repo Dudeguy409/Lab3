@@ -8,6 +8,10 @@ public class PrimeNumberGenerator {
 		if (inputNumber > 2) {
 			rslt.add(2);
 		}
+		
+		if (inputNumber > 3) {
+			rslt.add(3);
+		}
 		return rslt;
 	}
 
