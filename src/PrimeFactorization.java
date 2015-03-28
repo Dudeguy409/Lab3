@@ -6,7 +6,7 @@ public class PrimeFactorization {
 
 	public static List<Integer> generate(int i) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
-		if(i % 2 == 0){
+		while(i % 2 == 0){
 			list.add(2);
 			i = i / 2;
 		}
