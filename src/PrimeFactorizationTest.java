@@ -15,9 +15,12 @@ public class PrimeFactorizationTest {
 	}
 
 	@Test
-	public void testName() throws Exception {
+	public void testTwo() throws Exception {
 		assertEquals(list(2), PrimeFactorization.generate(2));
 	}
 
-	
+	@Test
+	public void testThree() throws Exception {
+		assertEquals(list(3), PrimeFactorization.generate(3));
+	}
 }
