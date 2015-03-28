@@ -29,7 +29,7 @@ public class PrimeNumberGeneratorTest {
 
 	@Parameterized.Parameters
 	public static Collection primeNumbers() {
-		return Arrays.asList(new Object[][] { { 2, list() } });
+		return Arrays.asList(new Object[][] { { 2, list() }, { 3, list(2) }});
 	}
 
 	private static List<Integer> list(Integer... integers) {
