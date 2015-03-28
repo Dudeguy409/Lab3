@@ -23,24 +23,29 @@ public class PrimeFactorizationTest {
 	public void testThree() throws Exception {
 		assertEquals(list(3), PrimeFactorization.generate(3));
 	}
-	
+
 	@Test
 	public void testFour() throws Exception {
-		assertEquals(list(2 , 2), PrimeFactorization.generate(4));
+		assertEquals(list(2, 2), PrimeFactorization.generate(4));
 	}
-	
+
 	@Test
 	public void testSix() throws Exception {
-		assertEquals(list(2 , 3), PrimeFactorization.generate(6));
+		assertEquals(list(2, 3), PrimeFactorization.generate(6));
 	}
-	
+
 	@Test
 	public void testEight() throws Exception {
-		assertEquals(list(2 , 2, 2), PrimeFactorization.generate(8));
+		assertEquals(list(2, 2, 2), PrimeFactorization.generate(8));
 	}
-	
+
 	@Test
 	public void testNine() throws Exception {
 		assertEquals(list(3, 3), PrimeFactorization.generate(9));
+	}
+
+	@Test
+	public void testBigNumb() throws Exception {
+		assertEquals(list(5, 7, 7, 1327), PrimeFactorization.generate(325115));
 	}
 }
