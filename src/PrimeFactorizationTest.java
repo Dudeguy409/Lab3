@@ -6,21 +6,21 @@ import java.util.List;
 import org.junit.AfterClass;
 import org.junit.Test;
 
-
 public class PrimeFactorizationTest {
 
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
+	private List<Integer> list(Integer... integers) {
+		// TODO Auto-generated method stub
+		return Arrays.asList(integers);
 	}
 
 	@Test
-	public void test() {
+	public void testOne() {
 		assertEquals(list(), PrimeFactorization.generate(1));
 	}
 
-	private List<Integer> list() {
-		// TODO Auto-generated method stub
-		return Arrays.asList();
+	@Test
+	public void testName() throws Exception {
+		assertEquals(list(2), PrimeFactorization.generate(2));
 	}
 
 }
